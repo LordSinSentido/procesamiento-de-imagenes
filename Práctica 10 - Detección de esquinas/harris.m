@@ -80,5 +80,8 @@ ax = gcf;
 resultado = ax;
 
 % Guardado de los resultados
-
-exportgraphics(ax,'resultados/esquinasDetectadas.png','Resolution',75); 
+imwrite(uint8(imagenFiltrada),'resultados/imagenFiltrada.png');
+imwrite(uint8(recorridoEnY + recorridoEnX),'resultados/recorridos.png');
+imwrite(uint8(imagen),'resultados/escalaGrises.png');
+imwrite(uint8(Q),'resultados/intensidades.png');
+exportgraphics(ax,'resultados/esquinasDetectadas.png','Resolution',75);
