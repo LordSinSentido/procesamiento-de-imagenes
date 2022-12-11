@@ -1,4 +1,4 @@
-0% Se lee la imágen a tratar
+% Se lee la imágen a tratar
 imagen = imread('mnd2.jpg');
 
 % Se convierte la imágen a escala de grises
